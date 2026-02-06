@@ -1,0 +1,7 @@
+services:
+   playwright:
+    image: mcr.microsoft.com/playwright:v1.58.1-noble
+    restart: always
+    command: 'npx -y playwright@1.58.1 run-server --port 3001 --host 0.0.0.0'
+    ports:
+      - 3001:3001
